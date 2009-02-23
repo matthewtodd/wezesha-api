@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-exec 'irb', '-Ilib', '-rujumbe/client'
+exec 'irb', '-Ilib', '-rwezesha/client'
