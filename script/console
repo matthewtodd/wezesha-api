@@ -1,2 +1,8 @@
 #!/usr/bin/env ruby
-exec 'irb', '-Ilib', '-rwezesha/client', '-rwezesha/console'
+
+case ARGV.shift
+when 'admin'
+  exec 'irb', '-Ilib', '-rwezesha/admin/client', '-rwezesha/admin/console'
+else
+  exec 'irb', '-Ilib', '-rwezesha/client', '-rwezesha/console'
+end
