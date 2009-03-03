@@ -4,9 +4,9 @@ module Wezesha
   class Client < ActiveResource::Base
   end
 
-  class Message < Client
+  class TextMessage < Client
   end
 
-  class Vcard < Message
+  class Vcard < Client
   end
 end
